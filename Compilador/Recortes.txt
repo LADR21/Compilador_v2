@@ -1,0 +1,9 @@
+{PREGUNTA} {sscanf (yytext,"%s", yylval.tname); return PREGUNTA}
+{SNPREGUNTA} {sscanf (yytext,"%s", yylval.tname); return SNPREGUNTA}
+
+PREGUNTA ("if")
+SNPREGUNTA ("else")
+
+
+{DOCIWHILE} {sscanf (yytext,"%s", yylval.tname); return DOCIWHILE}
+DOCIWHILE ("do")
